@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: white;
+}
+
+header{
+    background-image: url(../assets/bg-header.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Navigation bar */
+.navbar {
+    width: 100%;
+    padding: 30px;
+}
+.navbar .menu-bar {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+.navbar .menu-bar {
+    list-style-type: none;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.navbar .menu-bar li a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar .menu-bar li a:hover {
+    opacity: 20%;
+    transition: all 0.3s ease;
+}
+
+
+/* Hero section */
+
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    padding: 200px;
+    text-align: center;
+    color: white;
+}
+
+.hero .judul {
+    font-size: 50px;
+    letter-spacing: 2px;
+}
+
+.hero p {
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5px;
+    
+}
+
+.bar-search {
+    width: 70%;
+    max-width: 30px 40px;
+    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    padding: 5px 10px;
+    backdrop-filter: blur(4px) saturate(180%);
+}
+
+.bar-search input {
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 12px 10px;
+    font-size: 10px;
+    color: #cac7ff;
+}
+
+::placeholder {
+    color: #cac7ff;
+}
+
+.bar-search button img {
+    width: 15px;
+}
+
+.bar-search button {
+    border: 0;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background: #58629b;
+    cursor: pointer;
+}
+
+
+
+/* Destination Section */
+
+#destination {
+    width: 100%;
+    padding: 50px;
+    text-align: center;
+}
+
+.box h3 {
+    font-size: 35px;
+}
+
+.box p{
+    font-size: 14px;
+}
+
+.image-gallery {
+    display: flex;
+    padding: 40px;
+    gap: 30px;
+    align-content: center;
+    justify-content: center;
+}
+
+.image-box {
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.image-box img {
+    width: 250px;
+    transition: transform 0.3s;
+}
+
+.image-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.image-box:hover img {
+    transform: scale(1.1);
+}
+
+/* Videos Section */
+
+#Experience {
+    padding-top: 10%;
+    width: 100%;
+}
+
+
